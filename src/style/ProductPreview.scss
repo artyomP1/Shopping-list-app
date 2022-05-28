@@ -1,78 +1,65 @@
 $tetxMainColor: #585666;
 .product-preview {
-    min-width: 300px;
-    max-width: 350px;
+    min-width: 30rem;
+    max-width: 35rem;
     border-bottom: 1px solid #E3E3E5;
     display: flex;
     justify-content: space-between;
     align-items: center;
     align-content: flex-start;
     text-align: left;
-    margin: 15px auto 0;
-}
-
-.product-item {
-    min-width: 175px;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    font-size: 15px;
-    color: $tetxMainColor;
-    position: relative;
-}
-
-.counter {
-    color: #FF941A;
-    font-size: 1.5em;
-    line-height: 29.05px;
-    font-weight: 700;
-    border-right: 1px solid #E3E3E5;
-    display: flex;
-    width: 50px;
-    height: 50px;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 5px;
-}
-
-.product-name {
-    font-weight: 400;
-}
-
-.product-price {}
-
-.icon {
-    color: #7A7A93;
-    font-size: 18px;
-    padding-right: 10px;
-    cursor: pointer;
-}
-
-.icon-conatiner {
-    margin-bottom: 10px;
-}
-
-.icon:first-child {
-    border-right: 1px solid #E3E3E5;
-}
-
-.icon:nth-child(2) {
-    margin-left: 10px;
-    padding-right: 0;
-}
-
-.done {
-    top: 50%;
-    color: #B1B0B8;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    &::after {
-        content: "";
-        border-bottom: 1px solid #E3E3E5;
-        position: absolute;
+    margin: 1.5rem auto 0;
+    .product-item {
+        min-width: 17.5rem;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        font-size: 1.5rem;
+        color: $tetxMainColor;
+        position: relative;
+    }
+    .counter {
+        color: #FF941A;
+        font-size: 1.5em;
+        line-height: 2.9rem;
+        font-weight: 700;
+        border-right: 1px solid #E3E3E5;
+        display: flex;
+        width: 5rem;
+        height: 5rem;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 5px;
+    }
+    .icon {
+        color: #7A7A93;
+        font-size: 1.8rem;
+        padding-right: 1rem;
+        cursor: pointer;
+    }
+    .icon-conatiner {
+        margin-bottom: 1rem;
+    }
+    .icon:first-child {
+        border-right: 1px solid #E3E3E5;
+    }
+    .icon:nth-child(2) {
+        margin-left: 1rem;
+        padding-right: 0;
+    }
+    .done {
         top: 50%;
-        right: 0;
-        bottom: 50%;
-        width: 100%;
+        color: #B1B0B8;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        &::after {
+            content: "";
+            border-bottom: 1px solid #E3E3E5;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            bottom: 50%;
+            width: 100%;
+        }
     }
 }

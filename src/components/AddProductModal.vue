@@ -50,7 +50,7 @@
       <footer class="modal-footer">
         <button
           class="btn"
-          :class="{ 'disabled': isDisabled }"
+          :class="{ disabled: isDisabled }"
           @click="saveProduct"
         >
           <svg
@@ -93,7 +93,7 @@ export default {
       this.$emit("close");
     },
     saveProduct() {
-      if(this.isDisabled) return 
+      if (this.isDisabled) return;
       this.$emit("saveProduct", this.product);
       this.close();
     },

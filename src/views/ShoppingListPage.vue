@@ -1,5 +1,5 @@
 <template>
-  <div class="shopping-list-page">
+  <section class="shopping-list-page">
     <h1>Shopping List</h1>
     <ProductList
       :shoppingList="shoppingList"
@@ -9,7 +9,6 @@
     <div class="total">
       <span>Total:</span> <span>{{ totalPrice }} NIS</span>
     </div>
-
     <button class="btn" @click="showModal">
       <span class="plus-icon">+</span> Add Product
     </button>
@@ -18,9 +17,8 @@
       @close="closeModal"
       @saveProduct="saveProduct"
     />
-  </div>
+  </section>
 </template>
-
 
 <script>
 import ProductList from "@/components/ProductList.vue";
