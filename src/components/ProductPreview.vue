@@ -2,14 +2,14 @@
   <section class="product-preview">
     <span class="counter">{{ idx + 1 }}</span>
     <router-link
-      :to="'/productDetailes/' + productItem.id"
+      :to="'/product-detailes/' + productItem.id"
       class="product-item"
       :class="{ done: productItem.isDone }"
     >
       <span class="product-name">{{ productItem.name }}</span>
       {{ productItem.price }} NIS
     </router-link>
-    <div class="icon-container">
+    <div class="icons-container" :class="{'done-task': productItem.isDone}">
       <span class="icon" @click="markAsDone"
         ><svg
           width="19"
