@@ -71,4 +71,12 @@ $tetxMainColor: #585666;
             visibility: visible;
         }
     }
+    @media (max-width: 90rem) {
+        .icons-container {
+            visibility: visible;
+            &.done-task {
+                visibility: visible;
+            }
+        }
+    }
 }
